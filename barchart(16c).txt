@@ -1,0 +1,32 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the CSV file into a DataFrame using pd.read_csv()
+df = pd.read_csv("salesData.csv")
+
+# Extract the data for Chair and Table products
+data = df[["Months", "Chair", "Table"]]
+
+# Create a bar chart for Chair and Table products with bar width = 0.35
+bar_width = 0.35
+index = range(len(data))  # Index for the x-axis
+
+# Create bars for Chair and Table
+chair_bar = plt.bar(index, data['Chair'], bar_width, color='blue', label='Chair')
+table_bar = plt.bar([i + bar_width for i in index], data['Table'], bar_width, color='red', label='Table')
+
+# Add X and Y axis labels
+plt.xlabel("Months")
+plt.ylabel("Sold Units")
+
+# Add title
+plt.title("Sales Trend of Chair and Table")
+
+# Add a legend at the upper right location
+plt.legend(loc="upper left")
+
+# Set the X-axis tick labels to be the months
+plt.xticks([i + bar_width / 2 for i in index], data['Months'], rotation=45)
+
+# Show the plot
+plt.show()

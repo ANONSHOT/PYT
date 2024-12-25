@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the CSV file into a DataFrame using pd.read_csv()
+df = pd.read_csv("salesData.csv")
+
+# Plot the units sold data for each product with different line colors
+plt.plot(df["Months"], df['Pen'], color='blue', marker='o', label="Pen")
+plt.plot(df["Months"], df['Book'], color='red', marker='o', label="Book")
+plt.plot(df["Months"], df['Marker'], color='green', marker='o', label="Marker")
+plt.plot(df["Months"], df['Chair'], color='yellow', marker='o', label="Chair")
+plt.plot(df["Months"], df['Table'], color='purple', marker='o', label="Table")
+plt.plot(df["Months"], df['Pen Stand'], color='orange', marker='o', label="Pen Stand")
+
+# Add X and Y axis labels
+plt.xlabel("Months")
+plt.ylabel("Sold Units")
+
+# Add title
+plt.title("Sales Trend By Product")
+
+# Add a legend at the upper left location
+plt.legend(loc="upper left")
+
+# Show the plot
+plt.show()

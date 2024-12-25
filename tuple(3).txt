@@ -1,0 +1,29 @@
+# Create a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print("Original Tuple:", my_tuple)
+
+# Get the length of the tuple
+tuple_length = len(my_tuple)
+print("Length of the Tuple:", tuple_length)
+
+# Check if an item exists in the tuple
+check = 2 in my_tuple
+print("Is 2 in the Tuple?:", check)
+
+# Access items in the tuple
+print("Item at index 2:", my_tuple[2])
+
+# Convert the tuple to a list as tuples are immutable
+my_list = list(my_tuple)
+
+# Insert an element at a specific index in the list
+my_list.insert(2, 20)
+
+# Append an element to the end of the list
+my_list.append(6)
+
+# Convert the list back to a tuple
+my_tuple = tuple(my_list)
+
+# Print the updated tuple
+print("Updated Tuple:", my_tuple)

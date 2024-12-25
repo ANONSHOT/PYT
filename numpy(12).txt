@@ -1,0 +1,35 @@
+Program 12:
+
+Using a numpy module create an array and check the following
+
+1. Type of array
+
+3. Shape of array
+
+2. Axes of array
+
+4. Type of elements in array.
+
+import numpy as np.
+
+#Create a one-dimensional array
+
+arr np.array([1, 2, 3, 4, 5])
+
+#Print the type of the array print("Type of array:", type(arr))
+
+#Print the number of axes of the array print("Axes of array:", np.ndim(arr))
+
+Output:
+
+Type of array: <class 'numpy.ndarray'>
+
+Axes of array: 1
+
+Shape of array: (5,)
+
+Type of elements in array: int32
+
+#Print the shape of the array print("Shape of array:", arr.shape)
+
+#Print the type of elements in the array print("Type of elements in array:", arr.dtype)

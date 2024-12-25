@@ -1,0 +1,28 @@
+# Create a list
+my_list = [1, 2, 3, 4, 5]
+print("Original List:", my_list)
+
+# Insert an element at a specific index
+my_list.insert(2, 10)
+print("List after inserting 10 at index 2:", my_list)
+
+# Remove an element from the list
+my_list.remove(5)
+print("List after removing 5:", my_list)
+
+# Append an element to the end of the list
+my_list.append(20)
+print("List after appending 20:", my_list)
+
+# Get the length of the list
+list_length = len(my_list)
+print("Length of the list:", list_length)
+
+# Remove the last element from the list
+last_element = my_list.pop()
+print("Last element removed from the list:", last_element)
+print("List after removing the last element:", my_list)
+
+# Clear all elements from the list
+my_list.clear()
+print("List after clearing all elements:", my_list)

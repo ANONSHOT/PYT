@@ -1,0 +1,12 @@
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Define a function to check for even numbers
+def is_even(num):
+    return num % 2 == 0
+
+# Use filter() to filter only even numbers
+even_numbers = list(filter(is_even, numbers))
+
+# Print the filtered list of even numbers
+print("The even numbers are:", even_numbers)

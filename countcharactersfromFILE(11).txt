@@ -1,0 +1,39 @@
+def count_characters(filename):
+    # Open the file in read mode
+    with open(filename, "r") as file:
+        # Read the contents of the file into a string
+        contents = file.read()
+
+    # Create an empty dictionary
+    char_count = {}
+
+    # Loop through each character in the string
+    for char in contents:
+        # If the character is already in the dictionary, increment its count by 1
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            # If the character is not in the dictionary, add it and set its count to 1
+            char_count[char] = 1
+
+    # Return the dictionary
+    return char_count
+
+# Input the data
+data = input("Enter the data: ")
+
+# Input the filename to save the data
+filename = input("Enter the filename to save the data: ")
+
+# Write the data to the file
+with open(filename, "w") as file:
+    file.write(data)
+
+# Output that the file is being opened for reading
+print(f"Opening the file '{filename}' for reading...")
+
+# Call the function to count the frequency of characters in the file
+char_count = count_characters(filename)
+
+# Print the result
+print(f"Character frequency in '{filename}' is:", char_count)

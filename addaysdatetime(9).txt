@@ -1,0 +1,16 @@
+import datetime
+
+# Get the current date
+today = datetime.datetime.now().date()
+
+# Print the current date
+print("Current Date is:", today)
+
+# Input number of days to add
+days_to_add = int(input("Enter the number of days to add: "))
+
+# Add the days to the current date
+new_date = today + datetime.timedelta(days=days_to_add)
+
+# Print the new date
+print("Date after adding", days_to_add, "days is:", new_date)

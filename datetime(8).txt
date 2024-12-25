@@ -1,0 +1,7 @@
+import datetime
+
+# Get the current date and time
+now = datetime.datetime.now()
+
+# Print the date and time
+print("Today's date and time:", now)

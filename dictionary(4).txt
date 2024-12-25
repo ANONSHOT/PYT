@@ -1,0 +1,25 @@
+# Create a dictionary
+student = {"name": "Mary", "age": 20, "grade": "A"}
+
+# Print the dictionary items directly
+print("Dictionary items using items():")
+print(student.items())
+
+# Print the dictionary items by traversing it
+print("\nDictionary items by traversing:")
+for key, value in student.items():
+    print(f"{key}: {value}")
+
+# Access items in the dictionary using keys
+print("\nAge of student:", student["age"])
+
+# Use the get() method to access items
+print("Grade of student:", student.get("grade"))
+
+# Change values in the dictionary
+student["grade"] = "B"
+print("\nUpdated dictionary:", student)
+
+# Get the length of the dictionary
+dict_length = len(student)
+print("Length of the dictionary:", dict_length)

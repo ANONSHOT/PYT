@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the CSV file into a DataFrame using pd.read_csv()
+df = pd.read_csv("salesData.csv")
+
+# Get the data for the "Total Profit" column
+total_profit = df["Total Profit"]
+
+# Plot the total profit data
+plt.plot(total_profit, color='blue', marker='o', linestyle=':', label="Total Profit", linewidth=4)
+
+# Add X and Y axis labels
+plt.xlabel("Months")
+plt.ylabel("Total Profit")
+
+# Add title
+plt.title("Profit Trend of All Products")
+
+# Add a legend at the lower right location
+plt.legend(loc="lower right")
+
+# Add xticks to include all months
+plt.xticks(range(len(df)), df['Months'], rotation=45)
+
+# Show the plot
+plt.show()

@@ -1,0 +1,44 @@
+# Integer data type
+a = 10
+print("Type of a:", type(a))
+print("Value of a:", a)
+
+# Float data type
+b = 20.5
+print("Type of b:", type(b))
+print("Value of b:", b)
+
+# String data type
+c = "Python"
+print("Type of c:", type(c))
+print("Value of c:", c)
+
+# Boolean data type
+d = True
+print("Type of d:", type(d))
+print("Value of d:", d)
+
+# List data type
+e = [1, 2, 3, 4]
+print("Type of e:", type(e))
+print("Value of e:", e)
+
+# Tuple data type
+f = (1, 2, 3, 4)
+print("Type of f:", type(f))
+print("Value of f:", f)
+
+# Set data type
+g = {1, 2, 3, 4}
+print("Type of g:", type(g))
+print("Value of g:", g)
+
+# Dictionary data type
+h = {"name": "Srikanth", "age": 30}
+print("Type of h:", type(h))
+print("Value of h:", h)
+
+# None data type
+i = None
+print("Type of i:", type(i))
+print("Value of i:", i)
